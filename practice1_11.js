@@ -8,4 +8,4 @@ const FBF = (n) => {
         console.log(log);
     }
 };
-
+const calculate = (a,b,c) => (a+b+c)/3;
