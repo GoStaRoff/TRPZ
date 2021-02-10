@@ -66,3 +66,7 @@ const Sub = (a, b) => a - b;
 const Mul = (a, b) => a * b;
 const Div = (a, b) => (b === 0 ? 0 : a / b);
 
+const MagicNumber = (a) => {
+    a<0?console.log("Negative"):console.log("Positive");
+    
+}
