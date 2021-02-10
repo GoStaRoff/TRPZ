@@ -24,9 +24,35 @@ function getRandomInt(min, max) {
 }
 const arrayTask = (n) => {
   let arr = new Array(n);
+  let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     arr[i] = getRandomInt(0, 20);
+    sum += arr[i];
+    if (arr[i] % 2 !== 0) console.log(arr[i]);
   }
+  console.log(sum);
+  console.log(sum / n);
   console.log(Math.max(arr));
   console.log(Math.min(arr));
 };
+const array2D = () => {
+  let arr = [[], [], [], [], []];
+  for (let i = 0; i < 5; i++) {
+    let log = "";
+    for (let j = 0; j < 5; j++) {
+      arr[i][j] = getRandomInt(-20, 20);
+      log += arr[i][j];
+    }
+    console.log(log);
+  }
+  for (let i = 0; i < 5; i++) {
+    let log = "";
+    for (let j = 0; j < 5; j++) {
+      if (arr[i][j] < 0) arr[i][j] = 0;
+      else arr[i][j] = 1;
+      log += arr[i][j];
+    }
+    console.log(log);
+  }
+};
+
