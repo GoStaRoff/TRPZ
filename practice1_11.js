@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 const seconds = (total) => total % 60;
 const perimetr = (side, count) => side * count;
 const FBF = (n) => {
@@ -55,4 +57,12 @@ const array2D = () => {
     console.log(log);
   }
 };
+
+//const a = Number(prompt("Enter a"));
+//const b = Number(prompt("Enter b"));
+
+const Add = (a, b) => a + b;
+const Sub = (a, b) => a - b;
+const Mul = (a, b) => a * b;
+const Div = (a, b) => (b === 0 ? 0 : a / b);
 
