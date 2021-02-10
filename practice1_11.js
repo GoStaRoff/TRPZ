@@ -67,6 +67,20 @@ const Mul = (a, b) => a * b;
 const Div = (a, b) => (b === 0 ? 0 : a / b);
 
 const MagicNumber = (a) => {
-    a<0?console.log("Negative"):console.log("Positive");
-    
-}
+  a < 0 ? console.log("Negative") : console.log("Positive");
+  let isSimple = true;
+  for (let j = 2; j < a; j++) {
+    if (i % j == 0) isSimple = false;
+  }
+  isSimple ? "Is simple" : "Is not simple";
+  if (a % 2 === 0 && a % 5 === 0 && a % 3 === 0 && a % 6 === 0 && a % 9 === 0) {
+    console.log("DIV");
+  } else console.log("NOT DIV");
+};
+
+const reversedArray = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (Number.isInteger(arr[i])) arr[i] = arr[i] * arr[i];
+  }
+  return arr.reverse();
+};
