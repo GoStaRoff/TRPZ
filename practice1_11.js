@@ -3,10 +3,11 @@ const prompt = require("prompt-sync")();
 const seconds = (total) => total % 60;
 const perimetr = (side, count) => side * count;
 const FBF = (n) => {
-  for (let i = 1; i < n; i++) {
-    let log = "";
-    if (n % 3 === 0) log += "fizz";
-    if (n % 5 === 0) log += "buzz";
+  for (let i = 1; i <= n; i++) {
+    let log = " ";
+    if (i % 3 === 0) log += "fizz";
+    if (i % 5 === 0) log += "buzz";
+    if(i % 3 !== 0 && i % 5 !== 0) log+=i;
     console.log(log);
   }
 };
@@ -58,8 +59,8 @@ const array2D = () => {
   }
 };
 
-//const a = Number(prompt("Enter a"));
-//const b = Number(prompt("Enter b"));
+const a = Number(prompt("Enter a"));
+const b = Number(prompt("Enter b"));
 
 const Add = (a, b) => a + b;
 const Sub = (a, b) => a - b;
@@ -84,3 +85,4 @@ const reversedArray = (arr) => {
   }
   return arr.reverse();
 };
+
